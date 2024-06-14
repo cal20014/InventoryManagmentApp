@@ -4,47 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inventory Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <header class="header" id="header">
-      <h1 class="header-title" id="header-title">Inventory Dashboard</h1>
-      <div class="registration-container" id="registration-container">
-        <ul class="registration-list" id="registration-list">
-          <li class="sigup-item" id="signup-item">
-            <a class="signup-link" id="signup-link" href="/">Sign up</a>
-          </li>
-          <li class="login-item" id="login-item">
-            <a class="login-link" id="login-link" href="/">Log in</a>
-          </li>
-        </ul>
+      <h1 class="header-title" id="header-title">MSD Inventory</h1>
+      <div class="profile-section">
+        <img
+          src="./assets/profile-pic.webp"
+          alt="Profile Picture"
+          class="profile-pic"
+          width="50"
+          height="50"
+        />
       </div>
-      <nav class="nav" id="nav">
-        <ul class="nav-list" id="nav-list">
-          <li class="nav-item" id="nav-item">
-            <a class="nav-link" id="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item" id="nav-item">
-            <a href="./dashboard.html" class="nav-link" id="nav-link"
-              >Dashboard</a
-            >
-          </li>
-          <li class="nav-item" id="nav-item">
-            <a href="./addAsset.html" class="nav-link" id="nav-link"
-              >Add Asset</a
-            >
-          </li>
-          <li class="nav-item" id="nav-item">
-            <!-- Manage Assets:
-            Crud operations on assets in that page except adding assets
-            -->
-            <a href="./manageAssets.html" class="nav-link" id="nav-link"
-              >Manage Assets</a
-            >
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <div class="nav-wrapper">
+        <nav class="side-nav" id="side-nav">
+          <h1 class="header-title" id="header-title">Dashboard</h1>
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-item" id="nav-item">
+              <a class="nav-link" id="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a href="./dashboard.html" class="nav-link" id="nav-link"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a href="./addAsset.html" class="nav-link" id="nav-link"
+                >Add Asset</a
+              >
+            </li>
+            <li class="nav-item" id="nav-item">
+              <!-- Manage Assets:
+              Crud operations on assets in that page except adding assets
+              -->
+              <a href="./manageAssets.html" class="nav-link" id="nav-link"
+                >Manage Assets</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-content-wrapper">
+        <h2>This is a test</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
+          officia soluta, porro nulla provident culpa magni animi ex! Ut veniam
+          quisquam totam consequatur minus aliquam odit necessitatibus omnis
+          doloribus eos? Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Dolor officia soluta, porro nulla provident culpa magni animi
+          ex! Ut veniam quisquam totam consequatur minus aliquam odit
+          necessitatibus omnis doloribus eos?
+        </p>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>
