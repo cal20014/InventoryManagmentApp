@@ -5,13 +5,25 @@
 /* 4. Nav Styles */
 /* 5. Footer Styles */
 
+.dashboard-body {
+  display: grid;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main";
+}
+
 /* Header Styles */
 .header {
+  grid-area: header;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
   background-color: rgb(211, 211, 211);
+}
+
+.main {
+  grid-area: main;
 }
 
 .profile-section {
@@ -22,16 +34,11 @@
   border-radius: 50%;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-}
-
-.nav-wrapper {
-  grid-column: 1/2;
+.side-nav {
+  grid-area: sidenav;
   background-color: rgb(51, 50, 50);
   color: white;
-  height: 100vh;
+  height: 100%;
 }
 
 .nav-title {
@@ -58,15 +65,7 @@
 }
 
 .main-content-wrapper {
-  grid-column: 2/5;
   padding: 1rem;
-}
-
-/* add asset styles */
-.main-content-wrapper {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
 }
 
 .inventory-form-wrapper {

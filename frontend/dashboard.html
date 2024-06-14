@@ -13,9 +13,14 @@
     />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body>
+  <body class="dashboard-body">
     <header class="header" id="header">
-      <h1 class="header-title" id="header-title">MSD Inventory</h1>
+      <div class="searchBar">
+        <form action="/search" method="get" class="searchInput">
+          <input type="text" name="search" id="search" />
+          <button>Search</button>
+        </form>
+      </div>
       <div class="profile-section">
         <img
           src="./assets/profile-pic.webp"
@@ -26,36 +31,32 @@
         />
       </div>
     </header>
+    <nav class="side-nav" id="side-nav">
+      <h1 class="header-title" id="header-title">MSD Inventory</h1>
+      <ul class="nav-list" id="nav-list">
+        <li class="nav-item" id="nav-item">
+          <a href="./dashboard.html" class="nav-link" id="nav-link"
+            >Dashboard</a
+          >
+        </li>
+        <li class="nav-item" id="nav-item">
+          <a href="/" class="nav-link" id="nav-link">View Assets</a>
+        </li>
+        <li class="nav-item" id="nav-item">
+          <a href="./addAsset.html" class="nav-link" id="nav-link">Add Asset</a>
+        </li>
+        <li class="nav-item" id="nav-item">
+          <a href="/" class="nav-link" id="nav-link">Edit Asset</a>
+        </li>
+        <li class="nav-item" id="nav-item">
+          <a href="/" class="nav-link" id="nav-link">delete Asset</a>
+        </li>
+        <li class="nav-item" id="nav-item">
+          <a href="/" class="nav-link" id="nav-link">Reports</a>
+        </li>
+      </ul>
+    </nav>
     <main class="main">
-      <div class="nav-wrapper">
-        <nav class="side-nav" id="side-nav">
-          <h2 class="nav-title" id="nav-title">Dashboard</h2>
-          <ul class="nav-list" id="nav-list">
-            <li class="nav-item" id="nav-item">
-              <a href="./dashboard.html" class="nav-link" id="nav-link"
-                >Dashboard</a
-              >
-            </li>
-            <li class="nav-item" id="nav-item">
-              <a href="/" class="nav-link" id="nav-link">View Assets</a>
-            </li>
-            <li class="nav-item" id="nav-item">
-              <a href="./addAsset.html" class="nav-link" id="nav-link"
-                >Add Asset</a
-              >
-            </li>
-            <li class="nav-item" id="nav-item">
-              <a href="/" class="nav-link" id="nav-link">Edit Asset</a>
-            </li>
-            <li class="nav-item" id="nav-item">
-              <a href="/" class="nav-link" id="nav-link">delete Asset</a>
-            </li>
-            <li class="nav-item" id="nav-item">
-              <a href="/" class="nav-link" id="nav-link">Reports</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
       <div class="main-content-wrapper">
         <h2>Dashboard Content</h2>
         <p>
