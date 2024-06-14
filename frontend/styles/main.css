@@ -24,7 +24,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 5fr;
 }
 
 .nav-wrapper {
