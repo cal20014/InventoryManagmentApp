@@ -133,6 +133,7 @@
 
 .profile-section {
   padding: 1rem;
+  cursor: pointer;
 }
 
 .profile-pic {
