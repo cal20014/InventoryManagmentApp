@@ -31,15 +31,20 @@
   grid-column: 1/2;
   background-color: rgb(51, 50, 50);
   color: white;
+  height: 100vh;
+}
+
+.nav-title {
+  padding: 1rem 2rem;
 }
 
 .nav-list {
   list-style-type: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .nav-item {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .nav-item:hover {
@@ -50,4 +55,9 @@
 .nav-link {
   color: white; /* Set the text color to white */
   text-decoration: none; /* Optional: Removes the underline from links */
+}
+
+.main-content-wrapper {
+  grid-column: 2/5;
+  padding: 1rem;
 }
