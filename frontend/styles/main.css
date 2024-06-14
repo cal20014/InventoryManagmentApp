@@ -1,10 +1,119 @@
-/* Table of Contents */
-/* 1. Global Styles */
-/* 2. Header Styles */
-/* 3. Main Styles */
-/* 4. Nav Styles */
-/* 5. Footer Styles */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
 
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* Table of Contents */
+/* 1. GLOBAL STYLES */
+/* 2. DASHBOARD STYLES */
+
+/**************************
+ *  2.0 DASHBOARD - STYLES
+***************************/
+/* 2.1 BODY STYLES */
 .dashboard-body {
   display: grid;
   grid-template-areas:
@@ -12,7 +121,7 @@
     "sidenav main";
 }
 
-/* Header Styles */
+/* HEADER STYLES */
 .header {
   grid-area: header;
   display: flex;
@@ -20,10 +129,6 @@
   align-items: center;
   padding: 0 1rem;
   background-color: rgb(211, 211, 211);
-}
-
-.main {
-  grid-area: main;
 }
 
 .profile-section {
@@ -34,6 +139,7 @@
   border-radius: 50%;
 }
 
+/* NAV STYLES */
 .side-nav {
   grid-area: sidenav;
   background-color: rgb(51, 50, 50);
@@ -64,9 +170,21 @@
   text-decoration: none; /* Optional: Removes the underline from links */
 }
 
+/* MAIN STYLES */
+
+.main {
+  grid-area: main;
+}
+
 .main-content-wrapper {
   padding: 1rem;
 }
+
+/*********************************
+ * 3.0 MANAGE INVENTORY  - STYLES
+***********************************/
+
+/* 3.1 INVENTORY FORM STYLES */
 
 .inventory-form-wrapper {
   max-width: 1200px; /* Adjust based on your preference */
