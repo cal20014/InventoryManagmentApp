@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./scripts/profileDropDown.js" defer></script>
   </head>
   <body class="dashboard-body">
     <header class="header" id="header">
@@ -27,14 +28,30 @@
           <button>Search</button>
         </form>
       </div>
-      <div class="profile-section">
-        <img
-          src="./assets/profile-pic.webp"
-          alt="Profile Picture"
-          class="profile-pic"
-          width="50"
-          height="50"
-        />
+      <div id="profile-section" class="profile-section">
+        <input type="checkbox" id="profile-checkbox" class="profile-checkbox" />
+        <label for="profile-checkbox" class="profile-label">
+          <img
+            src="./assets/profile-pic.webp"
+            alt="Profile Picture"
+            class="profile-pic"
+            width="50"
+            height="50"
+          />
+        </label>
+        <div class="profile-dropdown-content">
+          <ul class="dropDown-list">
+            <li class="dropDown-item">
+              <a class="dropDown-link" href="./profile.html">Profile</a>
+            </li>
+            <li class="dropDown-item">
+              <a class="dropDown-link" href="./settings.html">Settings</a>
+            </li>
+            <li class="dropDown-item">
+              <a class="dropDown-link" href="./logout.html">Logout</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <nav class="side-nav" id="side-nav">
