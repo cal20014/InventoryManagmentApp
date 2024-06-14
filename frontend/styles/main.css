@@ -133,11 +133,11 @@
 
 .profile-section {
   padding: 1rem;
-  cursor: pointer;
 }
 
 .profile-pic {
   border-radius: 50%;
+  cursor: pointer;
 }
 
 /* NAV STYLES */
