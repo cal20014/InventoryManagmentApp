@@ -61,3 +61,51 @@
   grid-column: 2/5;
   padding: 1rem;
 }
+
+/* add asset styles */
+.main-content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.inventory-form-wrapper {
+  max-width: 1200px; /* Adjust based on your preference */
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between form groups */
+}
+
+.inventory-form-input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 180px; /* Adjust minimum width of each group here */
+  min-width: 180px; /* Ensures that the input group does not shrink below this width */
+}
+
+.inventory-form-input-group label,
+.inventory-form-input-group input[type="text"],
+.inventory-form-input-group input[type="month"],
+.inventory-form-input-group input[type="checkbox"],
+.inventory-form-input-group textarea {
+  width: 100%; /* Ensures inputs and labels take up full width of their parent */
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+.inventory-form-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  flex: 0 1 auto; /* Button does not grow but can shrink */
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Inventory</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <h1 class="header-title" id="header-title">Add Inventory</h1>
+      <div class="profile-section">
+        <img
+          src="./assets/profile-pic.webp"
+          alt="Profile Picture"
+          class="profile-pic"
+          width="50"
+          height="50"
+        />
+      </div>
+    </header>
+    <main class="main">
+      <div class="nav-wrapper">
+        <nav class="side-nav" id="side-nav">
+          <h2 class="nav-title" id="nav-title">Dashboard</h2>
+          <ul class="nav-list" id="nav-list">
+            <li class="nav-item" id="nav-item">
+              <a href="./dashboard.html" class="nav-link" id="nav-link"
+                >Dashboard</a
+              >
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a href="/" class="nav-link" id="nav-link">View Assets</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a href="./addAsset.html" class="nav-link" id="nav-link"
+                >Add Asset</a
+              >
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a href="/" class="nav-link" id="nav-link">Edit Asset</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a href="/" class="nav-link" id="nav-link">delete Asset</a>
+            </li>
+            <li class="nav-item" id="nav-item">
+              <a href="/" class="nav-link" id="nav-link">Reports</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="main-content-wrapper">
+        <div class="inventory-form-wrapper">
+          <h2>Add New Asset</h2>
+          <form action="/submit-inventory" method="POST">
+            <div class="inventory-form-input-group">
+              <label for="tagNumber">Tag Number</label>
+              <input required type="number" id="tagNumber" name="tagNumber" />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="serialNumber">Serial Number</label>
+              <input
+                required
+                type="number"
+                id="serialNumber"
+                name="serialNumber"
+              />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="building">Building Name</label>
+              <input required type="text" id="building" name="building" />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="roomNumber">Room Number</label>
+              <input required type="text" id="roomNumber" name="roomNumber" />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="poNumber">PO #</label>
+              <input required type="text" id="poNumber" name="poNumber" />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="purchasedFrom">Purchased From</label>
+              <input
+                required
+                type="text"
+                id="purchasedFrom"
+                name="purchasedFrom"
+              />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="unitCost">Unit Cost</label>
+              <input required type="number" id="unitCost" name="unitCost" />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="poDate">PO Date (M/YR)</label>
+              <input required type="date" id="poDate" name="poDate" />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="manufacturer">Manufacturer</label>
+              <input
+                required
+                type="text"
+                id="manufacturer"
+                name="manufacturer"
+              />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="make">Make</label>
+              <input required type="text" id="make" name="make" />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="model">Model</label>
+              <input type="text" id="model" name="model" required />
+            </div>
+            <div class="inventory-form-input-group">
+              <label for="itemDescription">Item Description</label>
+              <textarea id="itemDescription" name="itemDescription"></textarea>
+            </div>
+            <!-- <div class="inventory-form-input-group">
+              <label for="retired">Retired</label>
+              <input type="checkbox" id="retired" name="retired" />
+            </div> -->
+            <button
+              type="submit"
+              id="inventory-form-button"
+              class="inventory-form-button"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
